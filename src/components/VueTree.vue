@@ -21,7 +21,7 @@
   export default {
     components: { 'tree-item': Item },
 
-    model: {
+    model: { // 组件封装id绑定
       prop: 'ids',
       event: 'change'
     },
@@ -51,16 +51,16 @@
       return {
         defaultOptions: {
           label: 'label',
-          checkbox: true,
-          checkedOpen: true,
-          folderBold: true,
-          idsWithParent: true,
-          depthOpen: 0,
-          openIcon: 'fa fa-angle-right',
-          closeIcon: 'fa fa-angle-down',
-          halfCheckedIcon: 'fa fa-minus-square-o fa-fw',
-          checkedIcon: 'fa fa-check-square-o fa-fw',
-          uncheckedIcon: 'fa fa-square-o fa-fw'
+          checkbox: true,  //显示复选框
+          checkedOpen: true, // 已选择是否展开
+          folderBold: true, //目录加粗
+          idsWithParent: true, // 复选是否包含目录
+          depthOpen: 0, //初始展开层级
+          openIcon: 'fa fa-angle-right', //展开
+          closeIcon: 'fa fa-angle-down', // 关闭
+          halfCheckedIcon: 'fa fa-minus-square-o fa-fw', //部分选择
+          checkedIcon: 'fa fa-check-square-o fa-fw', // 全选
+          uncheckedIcon: 'fa fa-square-o fa-fw' // 不选
         },
         termOptions: {},
         idsWithParent: [],
