@@ -78,7 +78,7 @@
         handler: function (val) {
           this.initOptions()
         },
-        deep: true
+        deep:  true
       }
     },
 

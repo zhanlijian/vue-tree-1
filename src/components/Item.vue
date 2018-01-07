@@ -38,7 +38,7 @@
         :state="itemState"
         :key="idx"
         @handle="emitHandle"
-        @child-change="childChange"
+        @child-change="childChange"  
       />
     </ul>
   </li>
